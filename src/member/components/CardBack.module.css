@@ -1,0 +1,6 @@
+.card_background {
+    border-radius: var(--card-border-radius);
+    background: linear-gradient(90deg, #000000, #191919);
+    position: relative;
+    overflow: hidden;
+}
