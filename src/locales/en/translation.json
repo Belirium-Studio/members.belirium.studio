@@ -1,0 +1,11 @@
+{
+    "belirium_studio": "Belirium Studio",
+    "member_id": "Member ID",
+    "membership_date": "Membership date",
+    "date_format": "DD/MM/YYYY",
+    "title": "Belirium Studio Members",
+    "error": "Error",
+    "ouch": "Ouch",
+    "loading_error": "An error occured while loading the requested page.",
+    "page_doesnt_exist": "Maybe it simply doesn't exist ?"
+}

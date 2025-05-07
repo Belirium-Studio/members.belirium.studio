@@ -6,6 +6,7 @@ import { useElementSize } from "@mantine/hooks";
 import { useEffect, useState } from "react";
 import CardFront from "../components/CardFront";
 import CardBack from "../components/CardBack";
+import { useTranslation } from "react-i18next";
 
 const CARD_WIDTH = 85.60;
 const CARD_HEIGHT = 53.98;
@@ -15,6 +16,7 @@ const TRANSITION_DURATION = 150;
 const BETWEEN_TRANSITIONS_DELAY = 50;
 
 export default function MemberPage() {
+    const {t} = useTranslation();
     const params = useParams();
     const {member} = useLoaderData() as MemberLoaderData;
     const {ref, width, height} = useElementSize();
@@ -39,7 +41,7 @@ export default function MemberPage() {
         }, TRANSITION_DURATION + BETWEEN_TRANSITIONS_DELAY);
     };
     useEffect(() => {
-        document.title = `${member.name} - Belirium Studio Members`;
+        document.title = `${member.name} - ${t("title")}`;
     }, []);
     return (
         <AppLayout>
