@@ -1,0 +1,20 @@
+.member_card_front {
+    border-radius: var(--card-border-radius);
+    background: linear-gradient(90deg, #191919, #000000);
+    position: relative;
+    overflow: hidden;
+}
+
+.card_title {
+    background-color: #ffd700;
+}
+
+.card_footer {
+    background-color: #d10000;
+}
+
+.card_image {
+    border-radius: 50%;
+    border-color: #ffd700;
+    border-style: solid;
+}
