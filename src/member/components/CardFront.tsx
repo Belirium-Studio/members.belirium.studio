@@ -42,7 +42,7 @@ export default function CardFront({member, id, w, h}: {
                 {moment(member.date).format(t("date_format"))}
             </Text>
             <Flex className={classes.card_footer} pos="absolute" top={0.839 * h} h={0.161 * h} w={w} justify="center" align="center">
-                <Text fz={`${h * 0.091}px`} fw={600} c="white">
+                <Text fz={`${h * 0.091}px`} fw={600} c="white" tt="uppercase">
                     {member.status}
                 </Text>
             </Flex>
