@@ -21,7 +21,7 @@ export default function MemberPage() {
     const {member} = useLoaderData() as MemberLoaderData;
     const {ref, width, height} = useElementSize();
     const h = Math.min(638 * (CARD_HEIGHT / CARD_WIDTH), height, width * (CARD_HEIGHT / CARD_WIDTH));
-    const w = Math.min(638, width, height * (CARD_WIDTH * CARD_HEIGHT));
+    const w = Math.min(638, width, height * (CARD_WIDTH / CARD_HEIGHT));
     const [transitioning, setTransitioning] = useState(false);
     const [showFront, setShowFront] = useState(true);
     const [showBack, setShowBack] = useState(false);
