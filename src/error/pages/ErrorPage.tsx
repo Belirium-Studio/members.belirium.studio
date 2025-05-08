@@ -7,7 +7,7 @@ export default function ErrorPage() {
     const {t} = useTranslation();
     useEffect(() => {
         document.title = `${t("error")} - ${t("title")}`;
-    }, []);
+    }, [t]);
     return (
         <AppLayout>
             <Flex h={`calc(100vh - 2 * var(--app-shell-padding))`} align="center" justify="center" pos="relative" direction="column" gap="xl">

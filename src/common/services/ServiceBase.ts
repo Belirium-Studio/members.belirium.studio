@@ -1,4 +1,5 @@
 export class ServiceBase {
+    // eslint-disable-next-line  @typescript-eslint/no-explicit-any
     private async __fetch(method: string, url: string, body?: any): Promise<Response> {
         return new Promise((resolve, reject) => {
             fetch(url, {

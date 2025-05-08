@@ -42,7 +42,7 @@ export default function MemberPage() {
     };
     useEffect(() => {
         document.title = `${member.name} - ${t("title")}`;
-    }, []);
+    }, [member, t]);
     return (
         <AppLayout>
             <Flex ref={ref} h="calc(100vh - 2 * var(--app-shell-padding))" align="center" justify="center" pos="relative">
