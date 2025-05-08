@@ -1,11 +1,11 @@
 import '@mantine/core/styles.css';
 import "atropos/atropos.css";
-import { createBrowserRouter, RouterProvider } from "react-router";
+import { createHashRouter, RouterProvider } from "react-router";
 import {routes} from "./router/routes";
 import { createTheme, MantineProvider } from "@mantine/core";
 
 export default function App() {
-    const router = createBrowserRouter(routes);
+    const router = createHashRouter(routes);
     const theme = createTheme({
         fontFamily: '"Montserrat", sans-serif'
     });

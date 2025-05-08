@@ -14,7 +14,7 @@ export default function CardBack({id, w, h}: {
             height: h
         }}>
             <Flex h={h} w={w} align="center" justify="center">
-                <QRCodeSVG size={h * 0.6} value={`https://members.belirium.studio/${id}`} marginSize={2} bgColor="#ffffff" fgColor="#d10000" level="H" imageSettings={{
+                <QRCodeSVG size={h * 0.6} value={`https://members.belirium.studio/#/${id}`} marginSize={2} bgColor="#ffffff" fgColor="#d10000" level="H" imageSettings={{
                     src: "/static/logo.png",
                     excavate: true,
                     height: h * 0.1,
