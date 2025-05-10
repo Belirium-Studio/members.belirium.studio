@@ -1,7 +1,7 @@
 import '@mantine/core/styles.css';
 import "atropos/atropos.css";
 import { createHashRouter, RouterProvider } from "react-router";
-import {routes} from "./router/routes";
+import { routes } from "./router/routes";
 import { createTheme, MantineProvider } from "@mantine/core";
 
 export default function App() {
