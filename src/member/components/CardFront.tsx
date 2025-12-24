@@ -26,7 +26,7 @@ export default function CardFront({member, id, w, h}: {
             <Image className={classes.card_image} pos="absolute" left={w * 0.099} top={h * 0.334} w={h * 0.426} h={h * 0.426} src={`/static/${id}/image.png`} style={{
                 borderWidth: `${h * 0.011}px`
             }}/>
-            <Text pos="absolute" left={w * 0.420} top={h * 0.306} fz={`${h * 0.113}px`} fw={600} c="white">
+            <Text pos="absolute" left={w * 0.420} top={h * 0.306} fz={`${h * 0.085}px`} fw={600} c="white">
                 {member.name}
             </Text>
             <Text pos="absolute" left={w * 0.420} top={h * 0.458} fz={`${h * 0.053}px`} fw={600} c="#ffd700" tt="uppercase">
